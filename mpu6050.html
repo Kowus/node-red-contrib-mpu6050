@@ -1,0 +1,36 @@
+<script type="text/javascript">
+  RED.nodes.registerType('mpu6050', {
+    category: 'function',
+    color: '#a6bbcf',
+    defaults: {
+      name: { value: '' }
+    },
+    inputs: 0,
+    outputs: 1,
+    icon: 'mpu6050.png',
+    label: function(){
+      return this.name || 'mpu6050'
+    }
+  });
+</script>
+
+<script type="text/x-red" data-template-name="mpu6050">
+  <div class="form-row">
+    <label for="node-input-name">
+      <i class="icon-tag"></i>
+      Name
+    </label>
+    <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="mpu6050">
+    <p>A simple node that fetches current orientation from an I2C MPU6050 accelerometer</p>
+    <h3>Outputs</h3>
+       <dl class="message-properties">
+       <dt>payload
+           <span class="property-type">string | buffer</span>
+       </dt>
+   <h3>Details</h3>
+   <p>Some more information about the node.</p>
+</script>
