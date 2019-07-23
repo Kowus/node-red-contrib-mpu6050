@@ -2,9 +2,14 @@
   "name": "node-red-contrib-mpu6050",
   "version": "1.0.0",
   "description": "A node-red package for the MPU6050 accelerometer",
-  "main": "index.js",
+  "main": "mpu6050.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red": {
+    "nodes": {
+      "mpu6050": "mpu6050.js"
+    }
   },
   "repository": {
     "type": "git",
@@ -21,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/Kowus/node-red-contrib-mpu6050/issues"
   },
-  "homepage": "https://github.com/Kowus/node-red-contrib-mpu6050#readme"
+  "homepage": "https://github.com/Kowus/node-red-contrib-mpu6050#readme",
+  "dependencies": {
+    "johnny-five": "^1.2.0"
+  }
 }
