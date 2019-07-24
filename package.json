@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/Kowus/node-red-contrib-mpu6050#readme",
   "dependencies": {
-    "johnny-five": "^1.2.0"
+    "johnny-five": "^1.2.0",
+    "raspi-io": "^10.0.2"
   }
 }
