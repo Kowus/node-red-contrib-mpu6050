@@ -12,8 +12,7 @@ module.exports = function(RED) {
       var imu = new five.IMU({
         controller: 'MPU6050'
       });
-      imu.on('change', function() {
-        var payload = this;
+      imu.on('change', function(payload) {
         node.send(payload);
       });
     });
