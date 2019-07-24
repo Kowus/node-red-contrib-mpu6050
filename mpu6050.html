@@ -1,7 +1,7 @@
 <script type="text/javascript">
   RED.nodes.registerType('mpu6050', {
-    category: 'function',
-    color: '#a6bbcf',
+    category: 'I2C',
+    color: '#3fadb5',
     defaults: {
       name: { value: '' }
     },
@@ -29,8 +29,10 @@
     <h3>Outputs</h3>
        <dl class="message-properties">
        <dt>payload
-           <span class="property-type">string | buffer</span>
+           <span class="property-type">object | string</span>
        </dt>
+       <dd>Description of payload here</dd>
+       </dl>
    <h3>Details</h3>
    <p>Some more information about the node.</p>
 </script>
